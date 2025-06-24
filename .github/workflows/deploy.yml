@@ -3,12 +3,11 @@ name: Deploy Vite App to GitHub Pages
 on:
   push:
     branches:
-      - main  # or 'master' if you use master
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
